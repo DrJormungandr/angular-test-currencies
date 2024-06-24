@@ -1,0 +1,22 @@
+.currency-value-component {
+  display: flex;
+  .currency-value-block{
+    margin: 20px;
+    .currency-value {
+      margin: 10px 5px;
+    }
+    .currency {
+      margin: 10px 5px;
+      select {
+        width: 100%
+      };
+    }
+  }
+}
+.currency-input {
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  background-color: aliceblue;
+}

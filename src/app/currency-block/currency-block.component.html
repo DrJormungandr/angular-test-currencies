@@ -1,0 +1,16 @@
+<div class="currency-value-component">
+  <div class="currency-value-block" >
+    <ng-container [formGroup]="currencyForm">
+      <div class="currency-value">
+        <input type="number" formControlName="currencyValue" class="currency-input">
+      </div>
+      <div class="currency">
+        <select formControlName="currency" class="currency-input">
+          @for (currency of supportedCurrencies; track currency) {
+            <option [value]="currency">{{currency}}</option>
+          }
+        </select>
+      </div>
+    </ng-container>
+  </div>
+</div>
